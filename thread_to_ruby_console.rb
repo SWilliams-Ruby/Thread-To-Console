@@ -97,10 +97,8 @@ module SW
       
     end # end module Thread_To_Console
   end # if true/false
-  
-  
-  
 end
+
 SW::ThreadToConsoleDemo.run_demo
 nil
 
