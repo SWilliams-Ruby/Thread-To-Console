@@ -40,7 +40,7 @@ module SW
   # degugging aids
   ##########################
 
-  if false # Shall we load the signal trap?
+  if true #false # Shall we load the signal trap?
     module Thread_To_Console
       # Functional Description:
       # Module Thread_To_Console is a SIGINT handler that interrupts and executes code
