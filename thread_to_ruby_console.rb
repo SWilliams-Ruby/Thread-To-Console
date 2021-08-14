@@ -4,7 +4,7 @@ module SW
       begin
         p 'starting'
         start_interrupter_thread()
-        100000000.times {|i|   x = i }
+        100000000.times {|i| x = i }
       ensure
         p 'stopping'
         stop_interrupter_thread()
@@ -18,6 +18,7 @@ module SW
     
     def self.stop_interrupter_thread()
       @interrupter_thread.exit if @interrupter_thread.respond_to?(:exit)
+      @interrupter_thread = nil
     end
 
     def self.interrupter_loop()
