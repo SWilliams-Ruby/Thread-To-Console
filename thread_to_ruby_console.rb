@@ -4,9 +4,7 @@ module SW
       begin
         p 'starting'
         start_interrupter_thread()
-        100000000.times {|i|
-          x = i
-        }
+        100000000.times {|i|   x = i }
       ensure
         p 'stopping'
         stop_interrupter_thread()
